@@ -1,0 +1,36 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.navbar {
+  background-color: #161316;
+
+  &__container {
+    width: 100vw;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+  }
+
+  &__title {
+    color: $snow;
+  }
+
+  &__links {
+    // margin-right: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__links a {
+    text-decoration: none;
+    color: $snow;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
