@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+// media query mixins for device screen size
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop-width {
+  width: 102rem;
+  margin: 0 auto;
+}
