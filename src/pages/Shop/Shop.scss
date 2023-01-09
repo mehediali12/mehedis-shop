@@ -1,0 +1,64 @@
+@use "../../styles/partials/variables" as *;
+
+.shop {
+  &__heading {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.product {
+  border-radius: 15px;
+  width: 30rem;
+  height: 35rem;
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 40rem;
+  }
+
+  &__description {
+    color: $raisinBlack;
+    text-align: center;
+  }
+
+  &__price {
+    margin-top: 0.5rem;
+    color: $raisinBlack;
+  }
+
+  &__cart-btn {
+    background-color: transparent;
+    border: 2px solid $blue;
+    color: $blue;
+    min-width: 10rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: $blue;
+      border: 2px solid $blue;
+      transition: 0.2s ease-in;
+      color: $snow;
+      cursor: pointer;
+    }
+  }
+}
